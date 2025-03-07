@@ -23,7 +23,7 @@ def get_dad_joke():
     return random.choice(DAD_JOKES)
 
 # Page Config
-st.set_page_config(page_title='Daddy GPT', layout='centered', page_icon='🧔🏾')
+st.set_page_config(page_title='Dad GPT', layout='centered', page_icon='🧔🏾')
 
 # Function
 def main(userInput):
@@ -75,8 +75,8 @@ css="""
 """
 
 st.markdown(css, unsafe_allow_html=True)
-st.markdown('<h1 class="title">Daddy GPT</h1>', unsafe_allow_html=True)
-st.markdown('<p class="subtext">Treat me like Daddy, do not make me DIRTY!</p>', unsafe_allow_html=True)
+st.markdown('<h1 class="title">Dad GPT</h1>', unsafe_allow_html=True)
+st.markdown('<p class="subtext">Treat me like Daddy, Do not make me DIRTY!</p>', unsafe_allow_html=True)
 
 # Chat History
 if "messages" not in st.session_state:
