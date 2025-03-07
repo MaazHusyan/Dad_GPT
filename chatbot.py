@@ -13,7 +13,10 @@ DAD_JOKES = [
     "Remember, kiddo, a job well done is better than a job half done!",
     "I used to play piano by ear, but now I use my hands.",
     "You can’t trust stairs… they’re always up to something!",
-    "You know one of my friend is gay"
+    "Why did the old man fall down the well? He couldn’t see that well.",
+    "Why did the egg have a day off? Because it was Fryday.",
+    "Why did the tomato turn red? Because it saw the salad dressing!",
+    "If your house is cold, just stand in the corner. It’s always 90 degrees there"
 ]
 
 def get_dad_joke():
@@ -44,7 +47,7 @@ def main(userInput):
             
         # Append dad joke to the response
         response_text = ai_response.choices[0].message.content
-        response_text += f"\n\n💡 From Daddy.. : {get_dad_joke()}"
+        response_text += f"\n\n💡 I have a JOKE : {get_dad_joke()}"
         st.write(response_text)
         st.session_state.messages.append({"role": "ai", "avatar": "🧔🏾", "content": response_text})
 
